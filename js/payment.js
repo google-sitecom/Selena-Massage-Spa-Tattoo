@@ -1,4 +1,3 @@
-
 /* =========================================
    SELENA MASSAGE SPA WITH TATTOO
    PAYMENT.JS — COMPLETE CORRECTED VERSION
@@ -118,22 +117,22 @@ document.addEventListener("DOMContentLoaded", function () {
     setValue("payment-customer-email", savedEmail);
 
     setValue(
-        "payment-amount",
-        Number.isFinite(bookingAmount) && bookingAmount > 0
-            ? "$" + bookingAmount.toFixed(2)
-            : ""
-    );
+    "payment-amount",
+    Number.isFinite(bookingAmount) && bookingAmount > 0
+        ? bookingAmount.toString()
+        : ""
+);
 
     setText("summary-booking-reference", savedReference);
     setText("summary-customer-name", savedName);
     setText("summary-customer-email", savedEmail);
 
     setText(
-        "summary-booking-amount",
-        Number.isFinite(bookingAmount) && bookingAmount > 0
-            ? "$" + bookingAmount.toFixed(2)
-            : "Not available"
-    );
+    "summary-booking-amount",
+    Number.isFinite(bookingAmount) && bookingAmount > 0
+        ? bookingAmount.toString()
+        : "Not available"
+);
 
     if (btcWalletAddress) {
         btcWalletAddress.textContent = BTC_WALLET_ADDRESS;
@@ -423,6 +422,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
             return false;
         }
+        
+        if (selectedMethod === "gift card") {
+            return true;
+        }
 
         showPaymentMessage(
             "Please select a valid payment method.",
@@ -493,9 +496,9 @@ document.addEventListener("DOMContentLoaded", function () {
         formData.set("customer_email", savedEmail);
 
         formData.set(
-            "payment_amount",
-            "$" + bookingAmount.toFixed(2)
-        );
+    "payment_amount",
+    bookingAmount.toString()
+    );
 
         formData.set("payment_method", "Bitcoin");
         formData.set("payment_status", "Pending verification");
@@ -626,4 +629,3 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
-
