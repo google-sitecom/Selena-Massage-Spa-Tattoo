@@ -73,6 +73,10 @@ document.addEventListener("DOMContentLoaded", function () {
             {
                 name: "Couples Massage",
                 price: 180
+            },
+            {
+                name: "Full Bodey Massage",
+                price: 150
             }
         ],
 
@@ -82,7 +86,19 @@ document.addEventListener("DOMContentLoaded", function () {
                 price: 100
             },
             {
+                name: "small Tattoo",
+                price: 70
+            },
+            {
                 name: "Floral Tattoo",
+                price: 150
+            },
+            {
+                name: "Watercolor Tattoo",
+                price: 180
+            },
+            {
+                name: "Large Tattoo",
                 price: 150
             },
             {
@@ -244,12 +260,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             );
 
-            if (service && amountInput) {
-
-                amountInput.value =
-                    "$" + service.price.toFixed(2);
-
-            }
+            amountInput.value =
+    service.price.toString();
 
         });
 
@@ -408,9 +420,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Save the correct service amount in the booking email.
         formData.set(
-            "service_amount",
-            "$" + service.price.toFixed(2) + " USD"
-        );
+    "service_amount",
+    service.price.toString()
+   );
 
         formData.set(
             "booking_reference",
