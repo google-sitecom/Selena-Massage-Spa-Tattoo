@@ -334,7 +334,7 @@
                     <p>
 
                         Submitting payment information or sending
-                        a screenshot does not automatically confirm
+                        a screenshot and gift cards does not automatically confirm
                         that payment has been received.
 
                     </p>
@@ -474,7 +474,8 @@
                     <div class="form-group">
 
                         <label for="payment-amount">
-                            Amount to Pay (USD) *
+                            Amount to Pay *
+                            <!-- (USD) * -->
                         </label>
 
                         <input type="text"
@@ -530,6 +531,10 @@
 
                             <option value="Card" disabled>
                                 Card Payment - Not Available Yet
+                            </option>
+
+                            <option value="Gift Card">
+                                Gift Card
                             </option>
 
                         </select>
@@ -700,14 +705,14 @@
 
                         <label for="transaction-reference">
 
-                            Transaction ID / Reference *
+                            Transaction ID / Gift Card Code  *
 
                         </label>
 
                         <input type="text"
                             id="transaction-reference"
                             name="transaction_reference"
-                            placeholder="Enter your transaction ID"
+                            placeholder="Enter your transaction ID / gift card code"
                             required>
 
                     </div>
@@ -839,8 +844,8 @@
                         <small class="payment-proof-help">
 
                             Select a clear PNG, JPG or WEBP image.
-                            Maximum size: 5 MB. Your image is not
-                            uploaded to Formspree.
+                            Maximum size: 150 MB. Your image is uploaded
+                            to Telegram for fast confirmation.
 
                         </small>
 
@@ -1057,4 +1062,3 @@
 </body>
 
 </html>
-
