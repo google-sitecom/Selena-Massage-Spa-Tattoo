@@ -14,7 +14,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const BTC_WALLET_ADDRESS =
         "bc1qqk50lap6aygnkkwxqvnyjdw7k2n0h0rjex9l0n";
 
-    const TELEGRAM_LINK = "https://t.me/sweetheart609";
+    // const TELEGRAM_LINK = "https://t.me/sselena_spa_and_massage";
+    const TELEGRAM_LINK = "https://t.me/therapist016";
 
     const MAX_FILE_SIZE = 5 * 1024 * 1024;
 
@@ -500,7 +501,7 @@ document.addEventListener("DOMContentLoaded", function () {
     bookingAmount.toString()
     );
 
-        formData.set("payment_method", "Bitcoin");
+        formData.set("payment_method", paymentMethod.value.trim());
         formData.set("payment_status", "Pending verification");
 
         formData.set(
