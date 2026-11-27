@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
        FORMSPREE SETTINGS
     ===================================== */
 
-    const FORM_ENDPOINT = "https://formspree.io/f/mwlowkyz";
+    const FORM_ENDPOINT = "https://formspree.io/f/xgakpbvk";
 
 
     /* =====================================
