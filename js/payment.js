@@ -9,12 +9,12 @@ document.addEventListener("DOMContentLoaded", function () {
        1. PAYMENT SETTINGS
     ===================================== */
 
-    const PAYMENT_FORM_ENDPOINT = "https://formspree.io/f/xwloyqlb";
+    const PAYMENT_FORM_ENDPOINT = "https://formspree.io/f/mkjryanl";
 
     const BTC_WALLET_ADDRESS =
         "bc1qqk50lap6aygnkkwxqvnyjdw7k2n0h0rjex9l0n";
 
-    const TELEGRAM_LINK = "https://t.me/sandralouis78";
+    const TELEGRAM_LINK = "@sweetheart1609";
 
     const MAX_FILE_SIZE = 5 * 1024 * 1024;
 
